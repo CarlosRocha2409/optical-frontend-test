@@ -30,8 +30,8 @@ api.interceptors.response.use(
     toast.error(error.response.data.message);
 
     if (error.response.status === 401 || error.response.status === 403) {
-      // localStorage.removeItem("token");
-      // localStorage.removeItem("userId");
+      localStorage.removeItem("token");
+      localStorage.removeItem("userId");
       redirect("/login");
     }
     return Promise.reject(error);
