@@ -8,10 +8,11 @@ export default function useLogin() {
   const navigate = useNavigate();
   const { data, mutate, isLoading } = useMutation(postLogin, {
     onSuccess: (data) => {
-      toast.success("Successfully logged in");
       localStorage.setItem("token", data.jwt);
       localStorage.setItem("userId", (jwtDecode(data.jwt) as any).id);
-      navigate("/dashboard");
+      navigate("/dashboard", {
+        replace: true,
+      });
     },
   });
   return {
