@@ -25,7 +25,7 @@ VITE_BACKEND=
 $ yarn dev
 ```
 
-### Build application
+### Build application for production
 
 ```bash
 $ yarn build
