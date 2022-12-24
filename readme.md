@@ -5,6 +5,7 @@
 ```
 /dashboard (dashboard for managing tickets)
 /ticket (form for creating support tickets)
+/login (login for dashboard)
 ```
 
 ## Env Variables
