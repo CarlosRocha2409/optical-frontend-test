@@ -41,7 +41,7 @@ export default function TicketsTable() {
             <TableRow>
               <TablePagination
                 rowsPerPageOptions={[data.itemsPerPage]}
-                colSpan={5}
+                colSpan={6}
                 count={data.totalItems}
                 rowsPerPage={data.itemsPerPage}
                 page={page - 1}
